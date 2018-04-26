@@ -1,0 +1,30 @@
+.v-scrollbar {
+  position: absolute;
+  top: 0; right: 0;
+  width: 6px;
+  height: 0;
+  border-radius: 0px;
+  background-color: #555;
+  margin: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.v-scrollbox {
+  position: relative;
+  overflow: hidden;
+}
+.v-scrollbox-content {
+  position: relative;
+  top: 0;
+}
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.fall-back-scrollbox {
+  overflow-y: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
