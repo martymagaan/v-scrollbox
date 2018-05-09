@@ -30,7 +30,9 @@ You can customize the look of the scrollbar in the *vertical-scrollbox.css* file
 
 ## Compatibility
 
-Chrome 31+, FireFox 17+, IE 10+, Safari 7+, Opera 18+
+Chrome 31+, FireFox 17+, IE 10+, Opera 18+
+
+*Uses native scrollbar for Safari*
 
 *Important note concerning IE and Edge Browsers*
 For IE and Edge, this plugin falls back to an autohiding native overflow-y scroll due to an obscure issue where 
@@ -43,6 +45,5 @@ the regular custom scrollbar functionality of this plugin (which works on IE 9+ 
 mentioned above), set the *useIEEdgeFallBack* variable to *false* in the js file.
 
 ## TO DO
-
 * Better IE/Edge Windows 10 Precision touchpad fallback
 * Add touchscreen scrolling capability

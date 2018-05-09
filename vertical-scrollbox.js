@@ -20,7 +20,7 @@
   function createScrollBarIfOverflow(scrollBox) {
     var boxHeight = scrollBox.clientHeight;
     var contentHeight = scrollBox.scrollHeight;
-    if(contentHeight > boxHeight && !isIEorEdge()) {
+    if(contentHeight > boxHeight && !isIEorEdge() && !isSafari()) {
       addScrollBarIfNonexistent(scrollBox);
       setScrollBarDimensions(scrollBox, boxHeight, contentHeight);
     }
@@ -29,6 +29,10 @@
   function isIEorEdge() {
     if(!useIEEdgeFallBack) return false; 
     else return ((false || !!document.documentMode) || !!window.StyleMedia);
+  }
+  function isSafari() {
+    return navigator.userAgent.indexOf('Safari') != -1 &&
+           navigator.userAgent.indexOf('Chrome') == -1;
   }
   function addScrollBarIfNonexistent(scrollBox) {
     if(!checkIfScrollBarExists(scrollBox)) {
@@ -95,7 +99,7 @@
       addScrollListener(scrollBox);
       addDragListener(scrollBox);
     }
-    else if(isIEorEdge()) useOverflowScroll(scrollBox);
+    else if(isIEorEdge() || isSafari()) useOverflowScroll(scrollBox);
   }
   var focusedScrollBox;
   function addFocusListener(scrollBox) {
