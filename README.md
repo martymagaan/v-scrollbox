@@ -35,6 +35,7 @@ Chrome 31+, FireFox 17+, IE 10+, Opera 18+
 *Uses native scrollbar for Safari*
 
 *Important note concerning IE and Edge Browsers*
+
 For IE and Edge, this plugin falls back to an autohiding native overflow-y scroll due to an obscure issue where 
 mouse wheel events are not captured when using 2-finger touchpad scrolling on Windows 10 devices that use a 
 Precision touchpad. It does not seem like Microsoft will be fixing this issue as it only affects a small number of users. 
