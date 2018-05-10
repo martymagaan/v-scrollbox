@@ -2,6 +2,8 @@
 
 A simple, customizable, pure javascript, cross-browser vertical scrollbox.
 
+**See [demo.html](http://projects.martymagaan.com/vertical-scrollbox/demo.html) file to see it in action.**
+
 ## How to use
 
 Link the css file in your HTML (replace *path-to* with appropriate path):
