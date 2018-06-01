@@ -28,6 +28,9 @@ The scrollbars will only appear if the content overflows past the height of the 
 
 You can customize the look of the scrollbar in the *vertical-scrollbox.css* file.
 
+**For dynamically created content** you can use the global *initScrollBox()* function everytime dynamic 
+content is added to activate scrollbars if the newly added content causes the need for scrollbars.
+
 **Checkout the *demo.html* file for a basic usage example.**
 
 ## Compatibility

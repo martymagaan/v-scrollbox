@@ -1,16 +1,19 @@
+var initScrollBox();
+
 (function () {
   var maxPixelsPerScroll = 80;
   var useIEEdgeFallBack = true;
+
+  initScrollBox = function() {
+    setScrollBars();
+    addScrollFunctionality();
+    setFocusedScrollBox();
+  };
 
   initScrollBox();
   window.onload = initScrollBox;
   window.addEventListener('resize', initScrollBox);
 
-  function initScrollBox() {
-    setScrollBars();
-    addScrollFunctionality();
-    setFocusedScrollBox();
-  }
   var scrollBoxes;
   function setScrollBars() {
     scrollBoxes = document.getElementsByClassName('v-scrollbox');
