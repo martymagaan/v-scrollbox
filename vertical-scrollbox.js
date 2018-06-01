@@ -1,4 +1,4 @@
-var initScrollBox();
+var initScrollBox;
 
 (function () {
   var maxPixelsPerScroll = 80;
