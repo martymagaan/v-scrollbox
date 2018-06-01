@@ -35,7 +35,10 @@ content is added to activate scrollbars if the newly added content causes the ne
 
 ## Compatibility
 
-Chrome 31+, FireFox 17+, IE 10+, Opera 18+
+* Chrome 31+
+* FireFox 17+
+* IE 10+
+* Opera 18+
 
 *Uses native scrollbar for Safari*
 
