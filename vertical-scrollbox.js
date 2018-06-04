@@ -39,8 +39,9 @@ var initScrollBox;
   }
   function addScrollBarIfNonexistent(scrollBox) {
     if(!checkIfScrollBarExists(scrollBox)) {
-      var div = '<div class="v-scrollbar"></div>\n';
-      scrollBox.innerHTML = div + scrollBox.innerHTML;
+      var scrollbar = document.createElement('div');
+      scrollbar.className = 'v-scrollbar';
+      scrollBox.insertBefore(scrollbar, scrollBox.firstChild);
     }
   }
   function setScrollBarDimensions(scrollBox, boxHeight, contentHeight) {
