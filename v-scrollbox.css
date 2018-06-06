@@ -24,7 +24,3 @@
   -ms-user-select: none;
   user-select: none;
 }
-.fall-back-scrollbox {
-  overflow-y: scroll;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
